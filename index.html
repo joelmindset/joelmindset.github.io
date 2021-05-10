@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Joel Johnson</title>
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
+</head>
+<!--Body-->
+
+<body class="background" id="Home">
+
+    <!--Navbar-->
+    <div class="Navbar">
+        <a class="active" href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#GitHub">GitHub</a>
+        <a href="#Contact">Contact</a>
+    </div>
+
+    <!--Break spacing for nab bar-->
+    <br>
+    <br>
+
+    <!--Background video-->
+    <div>
+        <video autoplay muted loop id="Typing_Video">
+            <source src="./port_imgs/video/Typing_Video.mp4" type="video/mp4">
+            <!--Display message if Video-->
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <!--Video Text-->
+    <div class="Video_Text">
+        <h1 class="white-text">Joel Johnson Portfolio</h1>
+        <strong>
+            <p class="center">
+                <q>In some ways, programming is like painting.
+                    <br>You start with a blank canvas and certain basic raw materials.
+                    <br>You use a combination of science, art, and craft to determine what to do with them.
+                </q>
+                <br> -Andrew Hunt
+                <br>
+                <br> My name is Joel Johnson. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                <br>
+                <br> Thank you for stopping by and enjoy!
+            </p>
+        </strong>
+        <div id="About"></div>
+    </div>
+
+    <!--About section-->
+    <div class="Row">
+        <!--Left column-->
+        <div class="Column_2">
+            <img src="./port_imgs/Programming.jpg" alt="programming circuit board brain">
+        </div>
+        <!--Right column-->
+        <div class="Column_1">
+            <h1>About me:</h1>
+            <p>
+                Currently I am learning to become a software developer. I've always enjoyed working with computers.
+                <br> As a child i used programs and basic coding to improve my entertainment.
+                <br> Previous owner and operator of Mindset Tile, a construction company specializing in tile install, remodels, new construction, residential, and commercial.
+                <br> Currently due to the unstable market of construction and covid I've decid to finally persue something I've always loved doing.
+                <br>
+                <br> Studying at <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a> Software Developer Boot Camp, trainning in Html/CSS, JavaScript, SQL, Python, C# and .NET.
+                <br>
+                <br>Im on track to graduate in october. I am looking forward to a career and would love to become part of of team.<a href="#Contact">Contact</a> me below.
+
+            </p>
+        </div>
+        <div id="GitHub"></div>
+    </div>
+
+    <!--Github section-->
+    <div class="Row">
+        <!--Left column-->
+        <div class="Column_1">
+            <h1>Git hub</h1>
+            <p>
+                Check out my coding project on my GitHub profile here:
+                <br>
+                <p class="center"><a href="https://github.com/joelmindset" target="_blank">Joel Johnson GitHub</a></p>
+            </p>
+        </div>
+        <!--Right column-->
+        <div class="Column_2">
+            <a href="https://github.com/joelmindset" target="_blank"><img src="./port_imgs/github.png" alt="GitHub"></a>
+        </div>
+    </div>
+
+    <!--Contact section-->
+    <div class="Row" id="Contact">
+        <h1>Contact</h1>
+        <!--Specifies where to send data-->
+        <form action="" method="POST">
+            <label>Name:</label>
+            <input type="text" placeholder="Please enter your name here">
+            <label>Email:</label>
+            <input type="text" name="Email" placeholder="Please enter your email here">
+            <label>Message:</label>
+            <input type="text" id="Message" name="Email" placeholder="Please enter your name here">
+            <input type="submit" value="SUBMIT">
+        </form>
+    </div>
+    <!--Footer section-->
+    <footer>
+        <p>
+            <p class="center"><a href="http://www.joelmindset@gmail.com">Joelmindset@gmail.com</a>&nbsp|&nbsp<a href="#Home">Back to top</a>
+            </p>
+    </footer>
+</body>
+
+</html>
