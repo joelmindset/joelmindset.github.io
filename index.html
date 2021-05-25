@@ -1,117 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width" />
-    <title>Joel Johnson</title>
-    <link rel="stylesheet" type="text/css" href="portfolio.css">
-</head>
-<!--Body-->
-
-<body class="background" id="Home">
-
-    <!--Navbar-->
-    <div class="Navbar">
-        <a class="active" href="#Home">Home</a>
-        <a href="#About">About</a>
-        <a href="#GitHub">GitHub</a>
-        <a href="#Contact">Contact</a>
-    </div>
-
-    <!--Break spacing for nab bar-->
-    <br>
-    <br>
-
-    <!--Background video-->
-    <div>
-        <video autoplay muted loop id="Typing_Video">
-            <source src="./port_imgs/video/Typing_Video.mp4" type="video/mp4">
-            <!--Display message if Video-->
-            Your browser does not support HTML5 video.
-        </video>
-    </div>
-
-    <!--Video Text-->
-    <div class="Video_Text">
-        <h1 class="white-text">Joel Johnson Portfolio</h1>
-        <strong>
-            <p class="center">
-                <q>In some ways, programming is like painting.
-                    <br>You start with a blank canvas and certain basic raw materials.
-                    <br>You use a combination of science, art, and craft to determine what to do with them.
-                </q>
-                <br> -Andrew Hunt
-                <br>
-                <br> My name is Joel Johnson. Welcome to my portfolio website. On it, I will tell you about my background and experience.
-                <br>
-                <br> Thank you for stopping by and enjoy!
-            </p>
-        </strong>
-        <div id="About"></div>
-    </div>
-
-    <!--About section-->
-    <div class="Row">
-        <!--Left column-->
-        <div class="Column_2">
-            <img src="./port_imgs/Programming.jpg" alt="programming circuit board brain">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Joel Johnson</title>
+        <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+    </head>
+    <!-- Body -->
+    <body class="Background">
+        <!-- Navbar -->
+        <div class="Navbar">
+            <a class="active" href="#home">Home</a>
+            <!-- Sections -->
+            <a href="#Slideshow">Slideshow</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">Github</a>
+            <!-- functions and contact form -->
+            <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
         </div>
-        <!--Right column-->
-        <div class="Column_1">
-            <h1>About me:</h1>
-            <p>
-                Currently I am learning to become a software developer. I've always enjoyed working with computers.
-                <br> As a child i used programs and basic coding to improve my entertainment.
-                <br> Previous owner and operator of Mindset Tile, a construction company specializing in tile install, remodels, new construction, residential, and commercial.
-                <br> Currently due to the unstable market of construction and covid, I've decided to finally pursue something I've always loved doing.
-                <br>
-                <br> Studying at <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a> Software Developer Boot Camp, training in Html/CSS, JavaScript, SQL, Python, C# and .NET.
-                <br>
-                <br>I'm on track to graduate in October. I am looking forward to a career and would love to become part of team.<a href="#Contact">Contact</a> me below.
 
-            </p>
+        <!-- Background video -->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="port_imgs/video/Typing_Video.mp4">
+                <!--fail video-->
+                Your browser does not support HTML5 video.
+            </video>
         </div>
-        <div id="GitHub"></div>
-    </div>
+        
+        <!-- Video text -->
+        <div class="Video_Text">
+            <h1 class="white-text">Joel Johnson's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>In some ways, programming is like painting.
+                        <br>You start with a blank canvas and certain basic raw materials.
+                        <br>You use a combination of science, art, and craft to determine what to do with them.
+                    </q>
+                    <br> -Andrew Hunt
+                    <br>
+                    <q>Any goal can be achieved if you break it down into enough small parts.</q>
+                    <br> -Brain Tracy
+                    <br>
+                    <br> Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br>
+                    <br> Thank you for stopping by and enjoy!
+                </p>
+            </strong>
+        </div>
 
-    <!--Github section-->
-    <div class="Row">
-        <!--Left column-->
-        <div class="Column_1">
-            <h1>Git hub</h1>
-            <p>
-                Check out my coding project on my GitHub profile here:
+        <!-- Slideshow -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 6 -->
+                    <div class="mySlides fade">
+                        <!--*********Update self picture soon****************-->
+                        <img class="Slideshow_Images" src="port_imgs/man.jpg" alt="pic of me">
+                        <div class="text">I'm available to assist you on your project!</div>
+                    </div>
+                    <!-- Slide 1 of 2 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="port_imgs/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos">
+                        <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                    </div>
+                    <!-- Slide 1 of 3 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="port_imgs/Python.png" alt="Python logo">
+                        <div class="text">the popular programming language Python,</div>
+                    </div>
+                    <!-- Slide 1 of 4 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="port_imgs/C_Sharp_and_Dot_NET.png" alt="C# logo">
+                        <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
+                    </div>
+                    <!-- Slide 1 of 5 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="port_imgs/SQL_and_Database.jpg" alt="SQL logo">
+                        <div class="text">back end development, databases and SQL.</div>
+                    </div>
+                    <!-- Slide 1 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="port_imgs/program.jpg" alt="pic of me">
+                        <div class="text"><a class="white-text" onclick="openForm()" href="#Contact">Contact me now!</a></div>
+                    </div>
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
                 <br>
-                <p class="center"><a href="https://github.com/joelmindset" target="_blank">Joel Johnson GitHub</a></p>
-            </p>
-        </div>
-        <!--Right column-->
-        <div class="Column_2">
-            <a href="https://github.com/joelmindset" target="_blank"><img src="./port_imgs/github.png" alt="GitHub"></a>
-        </div>
-    </div>
 
-    <!--Contact section-->
-    <div class="Row" id="Contact">
-        <h1>Contact</h1>
-        <!--Specifies where to send data-->
-        <form action="" method="POST">
-            <label>Name:</label>
-            <input type="text" placeholder="Please enter your name here">
-            <label>Email:</label>
-            <input type="text" name="Email" placeholder="Please enter your email here">
-            <label>Message:</label>
-            <input type="text" id="Message" name="Email" placeholder="Please enter your name here">
-            <input type="submit" value="SUBMIT">
-        </form>
-    </div>
-    <!--Footer section-->
-    <footer>
-        <p>
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                </div>
+            </div>           
+        </div>
+
+        <!-- About section -->
+        <div class="Row" id="About">
+            <!-- left column -->
+            <div class="Column_2">
+                <img src="port_imgs/Programming.jpg" alt="">
+            </div>
+             <!--Right column-->
+            <div class="Column_1">
+                <h1>About me:</h1>
+                <p>
+                    Currently I am learning to become a full stack developer. I've always enjoyed working with computers.
+                    <br> As a child i used programs and basic coding to improve my entertainment.
+                    <br> Previous owner of Mindset Tile, a construction company specializing in tile, remodels, new construction, residential, and commercial.
+                    <br> Currently due to the unstable market of construction and covid, I've decided to finally pursue something I've always loved doing.
+                    <br>
+                    <br> Studying at <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a> Software Developer Boot Camp, training in Html/CSS, JavaScript, SQL, Python, C# and .NET.
+                    <br>
+                    <br>I'm on track to graduate in October and would love to work with you on your project.
+                </p>
+            </div>
+        </div>
+
+        <!-- Github section -->
+        <div class="Row" id="GitHub">
+            <!-- Left column -->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/joelmindset" target="_blank">Joel Johnson's GitHub</a></p>
+                </p>
+            </div>
+            <!-- Right column -->
+            <div class="Column_2">
+                <a href="https://github.com/joelmindset" target="_blank"><img src="port_imgs/github.png"></a>
+            </div>
+        </div>
+
+        <!-- Contact form -->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                 <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+                     <h1>Contact</h1>
+                     <label for="name"><b>Name</b></label>
+                       <input type="text" placeholder="Type your name here" name="name" required>
+                     <label for="phone"><b>Phone</b></label>
+                       <input type="text" placeholder="Type your phone number here" name="phone">
+                     <label for="email"><b>Email</b></label>		
+                       <input type="text" placeholder="Type your email address here" name="email" required>
+                     <label for="message"><b>Message</b></label>
+                       <input type="text" placeholder="Type your message here" name="message">
+          
+                     <button type="submit" class="btn">SUBMIT</button>
+                     <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                 </form>
+            </div>
+         </div>
+         <!-- Footer section -->
+        <footer>
             <p class="center"><a href="http://www.joelmindset@gmail.com">Joelmindset@gmail.com</a>&nbsp|&nbsp<a href="#Home">Back to top</a>
-            </p>
-    </footer>
-</body>
-
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
 </html>
