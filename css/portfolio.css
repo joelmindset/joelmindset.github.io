@@ -11,6 +11,7 @@ body {
     font-size: 1.5vw;
     overflow-x: hidden; /* prevents the horizontal scroll bar from appearing when the quote is hovered over */
     user-select: none; /* prevents the text on the webpage from being highlighted by user */
+    background-color: aquamarine;
 }
 
 /* This section contributes to the fade effect for the page that occurs when the page is loaded */
@@ -185,6 +186,7 @@ footer {
 
 /* Texts over the video */
 .Video_Text {
+    font-size: 40px;
     background: rgba(59, 58, 58, 0.5);
     color: white;
     width: 100%;
@@ -205,7 +207,7 @@ footer {
 
 /***** Slideshow Styling *****/
 #Slideshow_Background {
-    background: rgba(255, 255, 255, 0.35);
+    background: rgba(101, 179, 243, 0.35);
 }
 
 .mySlides{
@@ -318,12 +320,13 @@ footer {
     float: left;
     width: 50%;
     padding: 1.6%;
-    height: 550px;
-    background-color: #f2f2f2;
+    height: 600px;
+    background-color: #9affffaf;
+    border-radius: 12px;
 }
 
 .Column_1:hover p {
-    background-color: #f2f2f2;
+    background-color: #9affffaf;
 }
 @media screen and (max-width: 576px) {
     .Column_1 {
@@ -335,8 +338,8 @@ footer {
     float: left;
     width: 50%;
     padding: 1.6%;
-    height: 550px;
-    background-color: #bbb8b8;
+    height: 600px;
+    background-color: #7afbb7ce;
 }
 
 /* this inserts something after the content of selected elements */
@@ -441,4 +444,8 @@ button:hover, .form-container .btn:hover {
     transition-duration: 1s;
     -webkit-transition-duration: 1s;
     border-color: black;
+}
+
+footer {
+    background-color: aquamarine;
 }
